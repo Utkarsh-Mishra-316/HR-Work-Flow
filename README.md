@@ -1,8 +1,7 @@
  # HR Workflow Designer (React + React Flow)
 # #preview 
-<a href="Uploading WhatsApp Image 2026-04-24 at 1.43.14 PM.jpeg…">
-  <img src="https://github.com/user-attachments/assets/your-image.jpeg" width="400" alt="Clickable Image">
-</a>
+<img width="1600" height="767" alt="WhatsApp Image 2026-04-24 at 1 43 14 PM" src="https://github.com/user-attachments/assets/2efafd81-be23-4b4e-b5f6-04f0da38ab0a" />
+
 
 ## Overview
 
