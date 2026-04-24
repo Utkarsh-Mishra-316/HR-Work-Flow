@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "HR Workflow Designer"
+version = "1.0.0"
+id = "artifacts/hr-workflow-designer"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22698
+
+[services.development]
+run = "pnpm --filter @workspace/hr-workflow-designer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hr-workflow-designer", "run", "build" ]
+publicDir = "artifacts/hr-workflow-designer/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22698"
+BASE_PATH = "/"
